@@ -1,0 +1,10 @@
+services:
+  app:
+    build: .
+    image: hola-mundo-node:latest
+    container_name: hola-mundo-node
+    ports:
+      - "3000:3000"
+    environment:
+      - PORT=3000
+    restart: always
